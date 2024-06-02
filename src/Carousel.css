@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 100px;
+  }
+}
